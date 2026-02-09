@@ -2,10 +2,10 @@
 
 ## Tech Challenge Fase 4 | Entregável 1
 
-**Projeto:** VittaHub — Sistema de Comunicação Digital de Boletins Médicos
-**Curso:** MBA Tech Management — FIAP/PosTech
-**Grupo 18:** Gleiciele Correia • Henrique Silva Corrêa • Igor Cavalcante • Leonardo Turbiani • Regina Lima Garrido
-**Responsável por este entregável:** Leonardo Turbiani (RM366050)
+**Projeto:** VittaHub — Sistema de Comunicação Digital de Boletins Médicos  
+**Curso:** MBA Tech Management — FIAP/PosTech  
+**Grupo 18:** Gleiciele Correia • Henrique Silva Corrêa • Igor Cavalcante • Leonardo Turbiani • Regina Lima Garrido  
+**Responsável por este entregável:** Leonardo Turbiani (RM366050)  
 **Data:** Fevereiro 2026
 
 ---
