@@ -12,7 +12,7 @@
 
 ## 📋 Sobre este Entregável
 
-Este repositório documenta a **evolução da arquitetura de software** do VittaHub, conforme solicitado no Entregável 1 da Fase 4 do Tech Challenge. O trabalho inclui:
+Este repositório documenta a **evolução da arquitetura de software** do VittaHub, e corresponde ao Entregável 1 da Fase 4 do Tech Challenge. O trabalho nosso trabalho contém:
 
 - ✅ Avaliação crítica da arquitetura implementada na Fase 3
 - ✅ Definição e justificativa do modelo arquitetural (Monólito Modular)
@@ -46,19 +46,19 @@ Este repositório documenta a **evolução da arquitetura de software** do Vitta
 Os documentos foram escritos em ordem lógica. Para melhor compreensão, recomenda-se a leitura sequencial:
 
 ### 1. [Análise Crítica da Arquitetura Atual](docs/01-analise-arquitetura-atual.md)
-Avaliação honesta da arquitetura da Fase 3. Identifica pontos fortes (DDD, ACL, Privacy by Design) e gaps (classificação imprecisa como "microsserviços", ausência de camadas formais, observabilidade indefinida). Propõe a reclassificação para **Monólito Modular**.
+Avaliação honesta da arquitetura da Fase 3. Identificando pontos fortes (DDD, ACL, Privacy by Design) e gaps (classificação imprecisa como "microsserviços", ausência de camadas formais, observabilidade indefinida) que tivémos na fase anterior. No final, propondo a reclassificação para **Monólito Modular**.
 
 ### 2. [Decisão do Modelo Arquitetural](docs/02-decisao-modelo-arquitetural.md)
-Análise comparativa entre Monólito Tradicional, Microsserviços e Monólito Modular. Justifica a escolha do Monólito Modular com base em critérios concretos: tamanho da equipe (5 devs), estágio do produto (MVP), escopo funcional e custo operacional. Define gatilhos para migração futura.
+Análise comparativa entre Monólito Tradicional, Microsserviços e Monólito Modular. Justifica a escolha do Monólito Modular com base em critérios concretos e realistas: tamanho da equipe (5 devs), estágio do produto (MVP), escopo funcional e custo operacional. Define gatilhos para migração futura.
 
 ### 3. [Clean Architecture Aplicada](docs/03-clean-architecture-aplicada.md)
-Aplicação prática da Clean Architecture ao VittaHub. Mapeia as 4 camadas (Entities, Use Cases, Interface Adapters, Frameworks & Drivers) para componentes reais do sistema. Inclui exemplos de código em Dart, estrutura de pastas proposta e explicação detalhada da regra de dependência.
+Aplicação prática da Clean Architecture ao projeto do VittaHub. Mapeia as 4 camadas (Entities, Use Cases, Interface Adapters, Frameworks & Drivers) para componentes reais do sistema. Incluímos exemplos de código em Dart(utilizado no projeto), proposta de estruturação de pastas e explicação detalhada da regra de dependência.
 
 ### 4. [Diagramas C4 Atualizados](docs/04-diagramas-c4.md)
 Diagramas nos 3 primeiros níveis do modelo C4, atualizados para refletir a arquitetura evoluída. **Destaque:** Diagrama de Componentes (Nível 3), ausente na Fase 3, agora documenta a organização interna do backend com Clean Architecture.
 
 ### 5. [Roadmap de Evolução Técnica](docs/05-roadmap-evolucao.md)
-Plano de evolução em 4 fases (Monólito Modular → Amadurecido → Híbrido → Microsserviços), cada uma ativada por gatilhos mensuráveis. Inclui timeline estimada, conexão com marcos de negócio e gestão explícita de débito técnico.
+Plano de evolução em 4 fases (Monólito Modular → Amadurecido → Híbrido → Microsserviços), cada uma ativada por gatilhos mensuráveis. Inclui timeline estimada, conexão com marcos de negócio e gestão de débito técnico.
 
 ### 📝 ADRs (Architecture Decision Records)
 - [ADR-001: Monólito Modular](docs/adrs/ADR-001-modelo-monolito-modular.md) — Por que este modelo e não microsserviços
@@ -81,8 +81,6 @@ Plano de evolução em 4 fases (Monólito Modular → Amadurecido → Híbrido �
 
 ## 📊 Diagramas Principais
 
-Os diagramas estão renderizados diretamente nos documentos Markdown usando **Mermaid**. Para visualização completa no GitHub, os diagramas renderizam automaticamente. Os principais são:
-
 - **Arquitetura AS-IS** → [Seção 1.2](docs/01-analise-arquitetura-atual.md#12-inventário-da-arquitetura-real-as-is)
 - **Comparativo de Modelos** → [Seção 2.2](docs/02-decisao-modelo-arquitetural.md#22-modelos-considerados)
 - **Camadas Clean Architecture** → [Seção 3.2](docs/03-clean-architecture-aplicada.md#32-as-quatro-camadas-e-a-regra-de-dependência)
@@ -95,8 +93,9 @@ Os diagramas estão renderizados diretamente nos documentos Markdown usando **Me
 ## 🔗 Contexto do Projeto
 
 - **Fase 3 (concluída):** Arquitetura Empresarial com TOGAF/ADM, Governança Digital, Segurança da Informação, Gestão de Desenvolvimento
-- **Fase 4 (atual):** Evolução de Arquitetura, Governança de TI, Dados & IA, DevSecOps, Ecossistemas Digitais
 - **Vídeo da Fase 3:** [YouTube](https://youtu.be/LfIiEZa_lwQ)
+- **Fase 4 (atual):** Evolução de Arquitetura, Governança de TI, Dados & IA, DevSecOps, Ecossistemas Digitais
+
 
 ---
 
