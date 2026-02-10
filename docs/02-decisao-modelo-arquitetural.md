@@ -22,7 +22,7 @@ Uma única aplicação onde todos os módulos compartilham código, banco de dad
 │  (tudo misturado, sem fronteiras)   │
 │                                     │
 │            ┌─────────┐              │
-│            │ Oracle   │              │
+│            │ Oracle  │              │
 │            └─────────┘              │
 └─────────────────────────────────────┘
 ```
@@ -35,7 +35,7 @@ Uma única aplicação onde todos os módulos compartilham código, banco de dad
 Cada contexto de negócio é um serviço independente, com seu próprio banco de dados, deploy autônomo e comunicação via mensageria ou APIs.
 
 ```
-┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐
+┌──────────┐  ┌───────────┐  ┌──────────┐  ┌──────────┐
 │ Auth Svc │  │Boletim Svc│  │  ACL Svc │  │Audit Svc │
 │          │  │           │  │          │  │          │
 │ ┌──────┐ │  │ ┌──────┐  │  │ ┌──────┐ │  │ ┌──────┐ │
@@ -56,21 +56,21 @@ Uma única aplicação organizada internamente em **módulos bem definidos** com
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  MONÓLITO MODULAR                        │
+│                  MONÓLITO MODULAR                       │
 │                                                         │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐ │
-│  │   Módulo     │  │   Módulo     │  │    Módulo        │ │
-│  │   Auth       │  │  Boletim     │  │    Integração   │ │
-│  │             │  │  Médico      │  │    MV (ACL)     │ │
-│  │  interface  ◄──►  interface   ◄──►   interface     │ │
-│  └─────────────┘  └─────────────┘  └─────────────────┘ │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
+│  │   Módulo    │  │   Módulo    │  │    Módulo       │  │
+│  │   Auth      │  │  Boletim    │  │    Integração   │  │
+│  │             │  │  Médico     │  │    MV (ACL)     │  │
+│  │  interface  ◄──►  interface   ◄──►   interface    │  │
+│  └─────────────┘  └─────────────┘  └─────────────────┘  │
 │                                                         │
 │  ┌─────────────┐                                        │
-│  │   Módulo     │         ┌──────────┐                  │
-│  │  Auditoria   │         │  Oracle   │                  │
+│  │   Módulo    │         ┌───────────┐                  │
+│  │  Auditoria  │         │  Oracle   │                  │
 │  │             │         │ (schemas  │                  │
 │  │  interface  ◄────────►│ separados)│                  │
-│  └─────────────┘         └──────────┘                  │
+│  └─────────────┘         └───────────┘                  │
 └─────────────────────────────────────────────────────────┘
 ```
 
